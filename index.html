@@ -24,17 +24,22 @@
             top: 0;
             left: 0;
             width: 100%;
+            height: 60px; /* 恢復 Header 的較小高度 */
             background-color: #000;
-            padding: 10px;
+            padding: 10px; /* 恢復較小的內邊距 */
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            overflow: hidden;
         }
         .header img {
             position: absolute;
-            top: 10px;
-            left: 10px;
-            height: 50px;
+            top: 10px; /* 調整圖片位置 */
+            left: 10px; /* 調整圖片位置 */
+            height: 40px; /* 縮小圖片高度 */
+            max-width: 150px; /* 限制圖片的最大寬度 */
+            height: auto; /* 保持圖片比例 */
+            object-fit: contain;
         }
         .header-content {
             display: flex;
@@ -91,7 +96,7 @@
 </head>
 <body>
     <div class="header">
-        <img src="logo.png" alt="商標">
+        <img src="/img/Ikea_logo.svg.png" alt="商標">
         <div class="header-content">
             <div class="header-title">伺服器當機</div>
         </div>
